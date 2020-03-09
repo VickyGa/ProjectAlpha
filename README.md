@@ -12,7 +12,7 @@ The user will also be able to watch two YouTube videos showing mars landscape.
 
 
 4. API.
- https:"api.nasa.gov/mars-photos/
+https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?
 or https://mars-photos-heokuapp.com
 
 5 MVP.
