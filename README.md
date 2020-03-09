@@ -4,7 +4,12 @@
 The user will also be able to watch two YouTube videos showing mars landscape.
 
 3. WIREFRAMES.
- !(imageAlt)[imageURL]
+ !(imageAlt)[https://i.imgur.com/VsW6xyl.jpg]
+ !(imageAlr)[https://i.imgur.com/hs87klQ.jpg]
+ or
+ [Imgur](https://i.imgur.com/VsW6xyl.jpg)
+ [Imgur](https://i.imgur.com/hs87klQ.jpg)
+
 
 4. API.
  https:"api.nasa.gov/mars-photos/
