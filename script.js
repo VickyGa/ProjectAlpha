@@ -18,12 +18,11 @@ testcall()
 // ===================================
 
 const getRover = async () => {
-  const resp = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers, api_key`)
+  const resp = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers, api_key=${api_key}`);
 
   resp.data.forEach((rover) => {
     select.innerHTML += `
-    <option value=${category.id}>${category.name}</option>
-    `
+    <option value=${rover.id}>${rover.name}</option>`
   })
 }
 
@@ -34,5 +33,5 @@ getRover();
 // ======================================
 
 button.addEventListener('click', async () => {
-  const resp = await axios.get(https://api.nasa.gov/mars-photos/api/v1/rovers/)
+  const resp = await axios.get(https://api.nasa.gov/mars-photos/api/v1/rovers/api_key)
 })

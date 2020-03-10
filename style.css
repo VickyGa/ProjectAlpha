@@ -11,7 +11,7 @@ a:hover {
 
 
 #logo {
-  width: 60px;
+  width: 165px;
   margin-right: 10px;
 }
 
@@ -42,23 +42,23 @@ nav a {
   font-weight: bold;
   font-size: .9em;
 }
-/* #marslandscape {
+ #marslandscape {
   height: 450px;
   display: flex;
 }
 #mars-photo {
-  width 50%;
+  width 80%;
   text text-align: center;
 }
 #mars-photo img {
   height: 450px;
-} */
-/* #mars-pic-text{
+} 
+ #mars-pic-text{
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-} */
+} 
 /*Rover section*/
 h2 {
   text-align: center;
@@ -80,22 +80,32 @@ h2 {
  #rovers h2 {
   text-align: center;
 }
-/* #rovers {
+ #rovers {
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
   padding-bottom: 50px;
   ;
-} */ 
+} 
+#rovers img{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+} 
 /*Mission section*/
 #Mission h2{
   text-align: center;
 }
+#choices {
+  display: flex;
+  justify-content: space-around;
+}
 button {
   background-color: indianred;
   color: white;
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   border: 2px solid black;
   border-radius: 10px;
   text-transform: uppercase;
@@ -105,7 +115,50 @@ button:hover {
   background-color: green;
   color: white;
 }
+#launch {
+  text-align: center;
+  height:60px;
+  width:120px;
 
+}
+
+#launch-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 30px;
+  /* margin-left: 0;
+  margin-right: 0; */
+}
+
+.choice,
+#launch-div {
+  border: 2px solid #000;
+}
+
+.choice h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.choice {
+  height: 100px;
+  width: 300px;
+}
+.select{
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+  
+}
+.day{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px ;
+}
 
 /* video section */
 
