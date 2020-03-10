@@ -1,0 +1,157 @@
+
+
+a {
+  text-decoration: none;
+  color: #000033;
+}
+
+a:hover {
+  color: green;
+}
+
+
+#logo {
+  width: 60px;
+  margin-right: 10px;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(to right, white, indianred);
+
+}
+
+header div {
+  display: flex;
+  width:  30%;
+  margin-left: 10%;
+  align-items: center;
+}
+
+nav {
+  width: 50%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: .9em;
+}
+/* #marslandscape {
+  height: 450px;
+  display: flex;
+}
+#mars-photo {
+  width 50%;
+  text text-align: center;
+}
+#mars-photo img {
+  height: 450px;
+} */
+/* #mars-pic-text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+/*Rover section*/
+h2 {
+  text-align: center;
+}
+#rovers {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.rover {
+  width: 100%;
+  padding-top: 30px;
+}
+.rover  {
+  width: 30%;
+  text-align: center;
+}
+ #rovers h2 {
+  text-align: center;
+}
+/* #rovers {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  ;
+} */ 
+/*Mission section*/
+#Mission h2{
+  text-align: center;
+}
+button {
+  background-color: indianred;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+
+/* video section */
+
+#video-gallery {
+  display: flex;
+  background: linear-gradient(to right, white, indianred);
+  padding: 20px 0 20px 0;
+}
+
+.video {
+  width: 48%;
+  margin: 0 auto;
+}
+#Videos h2 {
+  text-align: center;
+}
+
+/* copied video responsive from https://www.ostraining.com/blog/coding/responsive-videos/ */
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*footer section*/
+#contact {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#Contact h2 {
+  text-align: center;
+}
+small {
+  text-align: center;
+  padding: 10px 0;
+  background-color: indianred;
+  color:white;
+  display: block;
+}

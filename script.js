@@ -1,4 +1,7 @@
 const api_key = "IQdXD0XvdrjA8Qi38n3yG1Qk1LXZp4yZuWaLkINc";
+const select = document.querySelector("select");
+const input = document.querySelector ("input")
+const button = document.querySelector("#launch");
 
 
 const testcall = async () => {
@@ -10,5 +13,26 @@ const testcall = async () => {
 }
 
 testcall()
+// ===================================
+// ==========select dropdown==========
+// ===================================
 
-console.log("hello")
+const getRover = async () => {
+  const resp = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers, api_key`)
+
+  resp.data.forEach((rover) => {
+    select.innerHTML += `
+    <option value=${category.id}>${category.name}</option>
+    `
+  })
+}
+
+getRover();
+
+// ======================================
+// =======Getting Image Request==========
+// ======================================
+
+button.addEventListener('click', async () => {
+  const resp = await axios.get(https://api.nasa.gov/mars-photos/api/v1/rovers/)
+})
