@@ -85,6 +85,7 @@ h2 {
 }
 #rover-title{
   padding-bottom: 10px;
+  border:2px solid black;
 }
 #rovers {
   display: flex;
