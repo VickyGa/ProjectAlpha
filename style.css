@@ -31,10 +31,9 @@ h3{
 
 header {
   height: 100px;
-  width: 100%;
   display: flex;
   background: linear-gradient(to right, white, indianred);
-
+  margin-bottom: 5px;
 }
 
 header div {
@@ -46,7 +45,7 @@ header div {
 
 nav {
   width: 50%;
-  margin-right: 10%;
+  margin:5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,57 +56,60 @@ nav a {
   font-size: .9em;
 }
 
-/*main*/
 
- #marslandscape {
-  height: 450px;
-  width: 500px;
-  margin-bottom: 10px;
-}
-#mars-photo {
-  width: 600;
-  text-align: center;
-}
-#mars-photo img {
-  height: 450px;
-  padding-bottom: 10px;
-} 
 
- #text{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+ #mars-photo {
+  padding: 0;
+  display:flex;
   justify-content: center;
-} 
+  align-items: flex-end;
+  height: 450px;
+  /* padding-bottom: 10px; */
+  margin-bottom:20px;
+
+ 
+  background-image: url("http://getwallpapers.com/wallpaper/full/7/c/0/1138227-mars-curiosity-wallpaper-1920x1080-laptop.jpg");
+  background-size: cover;
+ 
+}
+
+#mars-photo p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
 /*Rover section*/
+
+
 h2 {
   text-align: center;
+  display:block;
+  width: 100%;
 }
 #rover-title{
   padding-bottom: 10px;
   border:2px solid black;
 }
-#rovers {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+
 .rover {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 20px;
   width: 30%;
   text-align: center;
 }
  #rovers h2 {
   text-align: center;
+  margin:10px 0 30px 0;
+
 }
  #rovers {
   display: flex;
   justify-content: space-around;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  ;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 20px;
 } 
 #rovers img{
   width: 230px;
@@ -184,7 +186,10 @@ button:hover {
   margin-top: 20px ;
 }
 .photos{
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 10px;
+
 }
 
 /* video section */
@@ -256,5 +261,9 @@ nav{
   margin-right: 5%;
   width: 70%;
 }
+#logo{
+  width: 120px;
+}
+
 
 }

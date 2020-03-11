@@ -13,10 +13,10 @@ const testcall = async () => {
   console.log(resp.data.photos)
   const photoArray = resp.data.photos;
   const photos = document.querySelector(".photos");
-  debugger
+  // debugger
   for (let i = 0; i < 4; i += 1) {
     photos.innerHTML += `<div><img src=${photoArray[i].img_src} /></div>`;
-    debugger
+    // debugger
   }
 
 }
