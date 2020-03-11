@@ -1,37 +1,45 @@
 const api_key = "IQdXD0XvdrjA8Qi38n3yG1Qk1LXZp4yZuWaLkINc";
-const select = document.querySelector("select");
-const input = document.querySelector ("input")
+// const select = document.querySelector("select");
+// const input = document.querySelector("input")
 const button = document.querySelector("#launch");
 
 
 const testcall = async () => {
-  const resp = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${api_key}`);
+  const date = document.querySelector("#date");
+  const rover = document.querySelector(".rover-choice");
 
-  console.log(resp.data)
-  console.log(resp.data.photos[0].id)
+  const resp = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/${rover.value}/photos?api_key=${api_key}&earth_date=${date.value}`);
+
+  console.log(resp.data.photos)
+  const photoArray = resp.data.photos;
+  const photos = document.querySelector(".photos");
+  debugger
+  for (let i = 0; i < 4; i += 1) {
+    photos.innerHTML += `<div><img src=${photoArray[i].img_src} /></div>`;
+    debugger
+  }
 
 }
 
-testcall()
+// testcall()
 // ===================================
 // ==========select dropdown==========
 // ===================================
 
-const getRover = async () => {
-  const resp = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers, api_key=${api_key}`);
+// const getRover = async () => {
 
-  resp.data.forEach((rover) => {
-    select.innerHTML += `
-    <option value=${rover.id}>${rover.name}</option>`
-  })
-}
+//   const resp = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers?api_key=${api_key}`);
 
-getRover();
+//   resp.data.forEach((rover) => {
+//     select.innerHTML += `
+//     <option value=${rover.id}>${rover.name}</option>`
+//   })
+// }
+
+// getRover();
 
 // ======================================
 // =======Getting Image Request==========
 // ======================================
 
-button.addEventListener('click', async () => {
-  const resp = await axios.get(https://api.nasa.gov/mars-photos/api/v1/rovers/api_key)
-})
+button.addEventListener('click', testcall)

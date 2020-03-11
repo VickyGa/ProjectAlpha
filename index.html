@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MarsRovers</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="script.js"></script>
@@ -29,19 +30,20 @@
   </header>
 
   <main>
-
     <section id="marslandscape">
       <div id="mars-photo">
         <img src="http://getwallpapers.com/wallpaper/full/7/c/0/1138227-mars-curiosity-wallpaper-1920x1080-laptop.jpg"
           alt="Mars landscape" />
       </div>
-      <div id="mars-pic-text">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit dolores voluptatibus molestias neque
+      <div class="text">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit dolores voluptatibus molestias neque
           quae aliquid amet ipsum voluptatum cupiditate adipisci? Autem minus labore ex magnam suscipit voluptate,
           aperiam consectetur omnis?</p>
-      </div>
+      </div> 
     </section>
+    <div id="rover-title">
     <h2>Rovers</h2>
+  </div>
     <section id="rovers">
       <div class="rover">
         <img id="opportunity" src="#" alt="Opportunity Rover">
@@ -54,7 +56,7 @@
           communicating with Earth when a severe Mars-wide dust storm blanketed its location in June 2018.</p>
       </div>
       <div class="rover">
-        <img id="spirit" src="#" alt="Spirit Rover">
+        <img id="spirit" src="https://upload.wikimedia.org/wikipedia/commons/d/d8/NASA_Mars_Rover.jpg" alt="Spirit Rover">
         <h3>Spirit</h3>
         <p>Launch Date: June 10,2003, landed: January 4, 2004 - Mission End Date: May 25, 2011. Opportunity's twin
           rover, Spirit far outlasted its planned 90-day mission. Among her myriad discoveries, Spirit found evidence
@@ -87,8 +89,10 @@
         <div class="choice">
           <h3>Pick a Rover</h3>
           <div class="select">
-            <select>
-
+            <select class="rover-choice">
+              <option value="curiosity">Curiosity</option>
+              <option value="opportunity">Opportunity</option>
+              <option value="spirit">Spirit</option>
             </select>
           </div>
         </div>
@@ -107,6 +111,9 @@
 
       <div id="launch-div">
         <button id="launch">Launch</button>
+      </div>
+      <div class="photos">
+
       </div>
 
 
