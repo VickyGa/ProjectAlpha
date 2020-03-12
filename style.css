@@ -33,7 +33,7 @@ header {
   height: 100px;
   display: flex;
   background: linear-gradient(to right, white, indianred);
-  margin-bottom: 5px;
+   margin-bottom: 0.5px; 
 }
 
 header div {
